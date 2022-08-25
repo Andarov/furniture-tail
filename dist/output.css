@@ -695,6 +695,22 @@ html {
   margin-top: -1.25rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.mr-7 {
+  margin-right: 1.75rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -711,6 +727,10 @@ html {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .max-w-6xl {
@@ -761,6 +781,25 @@ html {
   border-radius: 9999px;
 }
 
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.rounded-t-full {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.rounded-tl-full {
+  border-top-left-radius: 9999px;
+}
+
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
@@ -808,6 +847,22 @@ html {
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pt-11 {
+  padding-top: 2.75rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-4xl {
