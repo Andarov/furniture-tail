@@ -659,6 +659,11 @@ html {
   margin-right: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -739,6 +744,10 @@ html {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.scroll-pt-16 {
+  scroll-padding-top: 4rem;
 }
 
 .flex-col {
@@ -863,6 +872,14 @@ html {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-4xl {
