@@ -550,3 +550,7 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.font-montserrat {
+  font-family: Montserrat, sans-serif;
+}
