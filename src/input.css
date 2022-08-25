@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .navlink {
+        @apply text-black font-semibold text-sm hover:text-blue-600 transition-colors active:opacity-60;
+    }
+}
