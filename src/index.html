@@ -5,44 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture / Tailwind</title>
-
+    
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    
     <!-- Tailwind -->
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
-
+    
     <!-- Header -->
     <header class="pt-10 pb-10">
         <div class="container mx-auto px-5 w-full max-w-6xl flex items-center justify-between">
             <h1 class="mr-5"><a class="font-bold text-blue-600 text-4xl hover:opacity-80 active:opacity-60" href="index.html">Furniture</a></h1>
             <nav>
                 <ul class="flex">
-                  <li class="mr-16">
-                    <a class="navlink" href="index.html">Home</a>
-                  </li>
-                  <li class="mr-16">
-                    <a class="navlink" href="#">Services</a>
-                  </li>
-                  <li class="mr-16">
-                    <a class="navlink" href="#">Doctors</a>
-                  </li>
-                  <li class="mr-16">
-                    <a class="navlink" href="#">Products</a>
-                  </li>
-                  <li>
-                    <a class="navlink" href="#">Gallery</a>
-                  </li>
+                    <li class="mr-16">
+                        <a class="navlink" href="index.html">Home</a>
+                    </li>
+                    <li class="mr-16">
+                        <a class="navlink" href="#">Services</a>
+                    </li>
+                    <li class="mr-16">
+                        <a class="navlink" href="#">Doctors</a>
+                    </li>
+                    <li class="mr-16">
+                        <a class="navlink" href="#">Products</a>
+                    </li>
+                    <li>
+                        <a class="navlink" href="#">Gallery</a>
+                    </li>
                 </ul>
-              </nav>
+            </nav>
         </div>
     </header>
-
+    
     <main class="pb-10">
+
         <!-- Hero -->
         <div class="w-full h-max bg-no-repeat bg-cover bg-center bg-blue-200" style="background-image: url(../img/hero.jpg); height: 749px;">
             <div class="container mx-auto px-5 w-full max-w-6xl flex items-center justify-end relative">
@@ -54,6 +55,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Why -->
         <div class="bg-blue-100 py-11">
             <div class="container mx-auto px-5 w-full max-w-6xl">
@@ -88,6 +90,7 @@
                 </ul>
             </div>
         </div>
+        
         <!-- Collection -->
         <div class="pt-11 pb-6">
             <div class="container mx-auto px-5 w-full max-w-6xl">
@@ -102,6 +105,7 @@
                 </ul>
             </div>
         </div>
+        
         <!-- More -->
         <div class="pt-6 pb-6">
             <div class="py-11 bg-blue-100">
@@ -117,6 +121,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Collection -->
         <div class="pt-6 pb-6">
             <div class="container mx-auto px-5 w-full max-w-6xl">
@@ -141,10 +146,21 @@
             </div>
         </div>
     </main>
-
-    <!-- CTA -->
-
     
-
+    <!-- CTA -->
+    <div class="py-14 bg-blue-100">
+        <div class="container mx-auto px-5 w-full max-w-xl">
+            <div class="flex flex-col justify-center items-center mb-12">
+                <h2 class="font-bold text-3xl mb-3">Join Our Mailing List</h2>
+                <p class="font-base text-xl text-center">Sign up to receive inspiration, product updates, and special offers from our team.</p>
+            </div>
+            <form class="flex justify-center" action="#">
+                <input class="p-5" type="text" placeholder="example@gmail.com">
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
