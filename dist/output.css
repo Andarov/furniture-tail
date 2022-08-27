@@ -642,6 +642,23 @@ html {
   position: relative;
 }
 
+.inset-5 {
+  top: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  left: 1.25rem;
+}
+
+.inset-x-5 {
+  left: 1.25rem;
+  right: 1.25rem;
+}
+
+.inset-x-10 {
+  left: 2.5rem;
+  right: 2.5rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -650,20 +667,52 @@ html {
   top: -400px;
 }
 
+.top-44 {
+  top: 11rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
 .top-\[80px\] {
   top: 80px;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-10 {
+  top: 2.5rem;
 }
 
 .z-\[50\] {
   z-index: 50;
 }
 
-.order-last {
-  order: 9999;
+.order-5 {
+  order: 5;
 }
 
 .order-1 {
   order: 1;
+}
+
+.order-10 {
+  order: 10;
+}
+
+.order-last {
+  order: 9999;
 }
 
 .-order-1 {
@@ -702,12 +751,13 @@ html {
   margin-bottom: 1.25rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .mb-3 {
@@ -722,12 +772,44 @@ html {
   margin-bottom: 1.25rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mb-7 {
   margin-bottom: 1.75rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -756,6 +838,10 @@ html {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-2\/6 {
   width: 33.333333%;
 }
@@ -764,12 +850,32 @@ html {
   width: 66.666667%;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
 .w-96 {
   width: 24rem;
 }
 
 .w-80 {
   width: 20rem;
+}
+
+.min-w-\[50\%\] {
+  min-width: 50%;
 }
 
 .max-w-6xl {
@@ -782,6 +888,10 @@ html {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -941,6 +1051,10 @@ html {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .align-middle {
   vertical-align: middle;
 }
@@ -1082,6 +1196,10 @@ html {
     margin-bottom: 3rem;
   }
 
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1094,23 +1212,57 @@ html {
     width: 24rem;
   }
 
+  .sm\:w-4\/6 {
+    width: 66.666667%;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
   }
 
   .sm\:p-5 {
     padding: 1.25rem;
   }
 
+  .sm\:text-left {
+    text-align: left;
+  }
+
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:first-letter\:w-1\/2::first-letter {
+    width: 50%;
   }
 }
 
 @media (min-width: 768px) {
   .md\:static {
     position: static;
+  }
+
+  .md\:inset-x-60 {
+    left: 15rem;
+    right: 15rem;
+  }
+
+  .md\:inset-x-40 {
+    left: 10rem;
+    right: 10rem;
+  }
+
+  .md\:top-44 {
+    top: 11rem;
+  }
+
+  .md\:right-5 {
+    right: 1.25rem;
   }
 
   .md\:z-auto {
@@ -1120,6 +1272,11 @@ html {
   .md\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+
+  .md\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .md\:mr-8 {
@@ -1150,6 +1307,14 @@ html {
     width: 50%;
   }
 
+  .md\:w-2\/6 {
+    width: 33.333333%;
+  }
+
+  .md\:w-4\/6 {
+    width: 66.666667%;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1169,6 +1334,10 @@ html {
 
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-5xl {
