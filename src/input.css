@@ -10,7 +10,7 @@
 
 @layer components {
     .navlink {
-        @apply text-black font-semibold text-sm hover:text-blue-600 transition-colors active:opacity-60;
+        @apply text-xl text-black font-semibold hover:text-blue-600 transition-colors active:opacity-60;
     }
     .btn {
         @apply inline-block py-4 px-12 bg-teal-900 text-white text-base font-bold hover:opacity-80 active:opacity-60;

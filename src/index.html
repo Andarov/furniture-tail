@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Tailwind -->
     <link rel="stylesheet" href="../dist/output.css">
@@ -21,17 +22,24 @@
         <div class="container mx-auto px-5 w-full max-w-6xl flex items-center justify-between">
             <h1 class="mr-5"><a class="font-bold text-blue-600 text-4xl hover:opacity-80 active:opacity-60" href="index.html">Furniture</a></h1>
             <nav>
-                <ul class="flex">
-                    <li class="mr-16">
+                <button id="menu" class="p-0 text-3xl cursor-pointer md:hidden block">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button id="exit" class="p-0 text-3xl cursor-pointer md:hidden block">
+                    <i class="fa-solid fa-xmark hidden"></i>
+                </button>
+                
+                <ul id="list" class="md:flex md:items-center md:w-auto md:py-0 py-8 md:pl-0 pl-7 z-[100] md:z-auto md:static absolute left-0 bg-white w-full  transition-all ease-in duration-300 md:opacity-100 opacity-0 right-[-400px]">
+                    <li class="md:mr-16 mb-2">
                         <a class="navlink" href="index.html">Home</a>
                     </li>
-                    <li class="mr-16">
+                    <li class="md:mr-16 mb-2">
                         <a class="navlink" href="#">Services</a>
                     </li>
-                    <li class="mr-16">
+                    <li class="md:mr-16 mb-2">
                         <a class="navlink" href="#">Doctors</a>
                     </li>
-                    <li class="mr-16">
+                    <li class="md:mr-16 mb-2">
                         <a class="navlink" href="#">Products</a>
                     </li>
                     <li>
@@ -43,7 +51,7 @@
     </header>
     
     <main class="pb-10">
-
+        
         <!-- Hero -->
         <div class="w-full h-max bg-no-repeat bg-cover bg-center bg-blue-200" style="background-image: url(../img/hero.jpg); height: 749px;">
             <div class="container mx-auto px-5 w-full max-w-6xl flex items-center justify-end relative">
@@ -148,7 +156,7 @@
     </main>
     
     <!-- CTA -->
-    <div class="py-14 bg-blue-100">
+    <div class="py-14 bg-blue-100 hidden">
         <div class="container mx-auto px-5 w-full max-w-xl">
             <div class="flex flex-col justify-center items-center mb-12">
                 <h2 class="font-bold text-3xl mb-3">Join Our Mailing List</h2>
@@ -160,11 +168,11 @@
             </form>
         </div>
     </div>
-
+    
     <!-- Footer -->
-    <footer class="py-11 bg-slate-800">
+    <footer class="py-11 bg-slate-800 hidden">
         <div class="container mx-auto px-5 w-full max-w-6xl flex justify-between">
-            <div class="w-2/6 mr-16">
+            <div class="w-2/6 md:mr-16 mb-2">
                 <h3 class="font-bold text-2xl mb-8 text-white">Beauty Care</h3>
                 <p class="font-base text-xl text-white text-opacity-50">Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
             </div>
@@ -188,5 +196,6 @@
         </div>
     </footer>
     
+    <script src="../src/main.js"></script>
 </body>
 </html>
