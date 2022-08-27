@@ -642,6 +642,23 @@ html {
   position: relative;
 }
 
+.inset-5 {
+  top: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  left: 1.25rem;
+}
+
+.inset-x-5 {
+  left: 1.25rem;
+  right: 1.25rem;
+}
+
+.inset-x-10 {
+  left: 2.5rem;
+  right: 2.5rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -676,6 +693,30 @@ html {
 
 .right-\[80px\] {
   right: 80px;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.top-14 {
+  top: 3.5rem;
 }
 
 .z-\[-1\] {
@@ -718,6 +759,10 @@ html {
   z-index: 50;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -726,6 +771,16 @@ html {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mr-5 {
@@ -764,6 +819,14 @@ html {
   margin-bottom: 0.75rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .block {
   display: block;
 }
@@ -786,6 +849,20 @@ html {
   height: auto;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.min-h-max {
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -800,6 +877,60 @@ html {
 
 .w-4\/6 {
   width: 66.666667%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.min-w-min {
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+.min-w-max {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.min-w-fit {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.min-w-\[\] {
+  min-width: ;
+}
+
+.min-w-\[50\%\] {
+  min-width: 50%;
 }
 
 .max-w-6xl {
@@ -878,6 +1009,10 @@ html {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -896,6 +1031,10 @@ html {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-5 {
@@ -944,6 +1083,10 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-4xl {
@@ -1050,17 +1193,54 @@ html {
   opacity: 0.6;
 }
 
+@media (min-width: 640px) {
+  .sm\:bg-cover {
+    background-size: cover;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:static {
     position: static;
+  }
+
+  .md\:inset-x-60 {
+    left: 15rem;
+    right: 15rem;
+  }
+
+  .md\:inset-x-40 {
+    left: 10rem;
+    right: 10rem;
+  }
+
+  .md\:top-44 {
+    top: 11rem;
+  }
+
+  .md\:right-5 {
+    right: 1.25rem;
   }
 
   .md\:z-auto {
     z-index: auto;
   }
 
+  .md\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
   .md\:mr-16 {
     margin-right: 4rem;
+  }
+
+  .md\:mr-8 {
+    margin-right: 2rem;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .md\:flex {
@@ -1075,8 +1255,20 @@ html {
     width: auto;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:bg-cover {
+    background-size: cover;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 
   .md\:py-0 {
@@ -1086,6 +1278,11 @@ html {
 
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:opacity-100 {
